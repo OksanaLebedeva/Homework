@@ -1,17 +1,19 @@
-﻿Console.Clear();
+﻿// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+Console.Clear();
 Console.Write("Please enter the number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int result = -1;
-if (Math.Abs(num)>99)
+int num1 = num;
+
+if (Math.Abs(num) > 99)
 {
-  if (Math.Abs(num)<1000) result = Math.Abs(num) % 10;
-  else if (Math.Abs(num)<10000) result = (Math.Abs(num) /10) % 10;
-  else if (Math.Abs(num)<100000) result = (Math.Abs(num) /100) % 10;
-  else if (Math.Abs(num)<1000000) result = (Math.Abs(num) /1000) % 10;
-  else if (Math.Abs(num)<10000000) result = (Math.Abs(num) /10000) % 10;
+  int divider = 100;
+  while (num1 / divider > 10)
+  {
+    num1 = num1 / 10;
+  }
   Console.Write("The third digit from the left is ");
-  Console.WriteLine(result);
-} 
+  Console.WriteLine(num1 % 10);
+}
 else
 {
   Console.WriteLine("There is no third digit in this number");
