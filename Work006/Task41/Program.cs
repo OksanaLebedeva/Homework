@@ -10,6 +10,6 @@ for (int i=0; i<num; i++)
 {
   Console.Write($"Please enter {i+1} number: ");
   arr[i] = Convert.ToInt32(Console.ReadLine());
-  if (arr[i]<0) count++;
+  if (arr[i]>0) count++;
 }
-Console.WriteLine($"There are {count} negative numbers");
+Console.WriteLine($"There are {count} positive numbers");
