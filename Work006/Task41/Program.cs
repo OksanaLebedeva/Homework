@@ -17,15 +17,7 @@ for (int i=0; i<num; i++)
 Console.WriteLine($"There are {count} positive numbers");
 
 // Second option - array was pre-entered
-void PrintArray(int[] array)
-{
-  for (int i=0; i<array.Length; i++)
-  {
-    Console.Write($"{array[i]}");
-    if (i<array.Length-1) Console.Write(", ");
-    else Console.Write("");
-  }
-  Console.WriteLine("]");
+void Pr 
 }
 int[] arr2 = {-1, 0, 5, 7, -10, 18, -34, 55};
 Console.WriteLine();
