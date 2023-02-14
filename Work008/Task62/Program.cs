@@ -10,9 +10,9 @@ void CreatePlainArray(int[] arr)
     for (int i = 0; i < arr.Length; i++)
     {
         arr[i] = new Random().Next(0, 10);
-        Console.Write($"{arr[i]} ");
+        // Console.Write($"{arr[i]} ");
     }
-    Console.WriteLine();
+    // Console.WriteLine();
 }
 void PrintArray(int[,] arr)
 {
